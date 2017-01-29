@@ -1,0 +1,25 @@
+.container{
+  width: 500px;
+  margin: 50px auto;
+}
+
+.square {
+  width: 48px;
+  height: 48px;
+  background: #4fd9ec;
+  border: solid black 1px;
+  float: left;
+}
+
+.square:hover{
+  background: #098caf;
+}
+
+.obstacle {
+  width: 48px;
+  height: 48px;
+  background: #27576b;
+  border: solid black 1px;
+  float: left;
+
+}
