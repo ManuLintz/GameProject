@@ -1,40 +1,56 @@
 function Filler(){
-  this.position={row:1,column:1};
-  this.pathUp();
+  this.position={row:"",col:""};
+
 
 }
+//to start the game, the player choses a position
+Filler.prototype.getPosition = function(i){
+  this.position.row= parseInt($(i).attr('row'));
+  this.position.col= parseInt($(i).attr('col'));
 
-Filler.prototype.getPosition = function(){};
-Filler.prototype.move = function(){};
+};
 
-/*Filler.prototype.getBoardWidth = function(){
-  var w= board.col;
-  console.log(w);
-};*/
+//these functions allow the player to move after it checks that
+// the path is free
+Filler.prototype.moveUp = function(){
+  if (this.pathUp()){
+   this.position.row-=1;}
+};
+Filler.prototype.moveDown = function(){
+  if (this.pathDown()){
+   this.position.row+=1;}
+};
+Filler.prototype.moveLeft = function(){
+  if (this.pathLeft()){
+   this.position.col-=1;}
+};
+Filler.prototype.moveRight = function(){
+  if (this.pathRight()){
+   this.position.col+=1;}
+};
+//We check if there's room to go
 Filler.prototype.pathUp = function(){
-  var upSquare= board.col*this.position.row -board.col + this.position.column+1;
-  var upClass= $('div:nth-of-type('+upSquare+')').attr('class');
+  var upSquare= board.col*this.position.row -board.col + this.position.col+1;
+  var upClass= $('li:nth-of-type('+upSquare+')').attr('class');
   if(this.position.row>0 && upClass==="square")
   {return true;}
 };
-
-
 Filler.prototype.pathDown = function(){
-  var downSquare= board.col*this.position.row +board.col + this.position.column+1;
-  var downClass= $('div:nth-of-type('+downSquare+')').attr('class');
+  var downSquare= board.col*this.position.row +board.col + this.position.col+1;
+  var downClass= $('li:nth-of-type('+downSquare+')').attr('class');
   if(this.position.row<9 && downClass==="square")
   {return true;}
 };
 Filler.prototype.pathLeft = function(){
-  var leftSquare= board.col*this.position.row + this.position.column;
-  var leftClass= $('div:nth-of-type('+leftSquare+')').attr('class');
-  if(this.position.row<9 && leftClass==="square")
+  var leftSquare= board.col*this.position.row + this.position.col;
+  var leftClass= $('li:nth-of-type('+leftSquare+')').attr('class');
+  if(this.position.col>0 && leftClass==="square")
   {return true;}
 };
 Filler.prototype.pathRight = function(){
-  var rightSquare= board.col*this.position.row + this.position.column+2;
-  var rightClass= $('div:nth-of-type('+rightSquare+')').attr('class');
-  if(this.position.row<9 && rightClass==="square")
+  var rightSquare= board.col*this.position.row + this.position.col+2;
+  var rightClass= $('li:nth-of-type('+rightSquare+')').attr('class');
+  if(this.position.col<9 && rightClass==="square")
   {return true;}
 };
 
