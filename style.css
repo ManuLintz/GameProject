@@ -1,6 +1,17 @@
-.container{
-  width: 500px;
+.header{
+  height:50px;
+  border: solid black 1px;
+}
+.container {
+  width: 900px;
+  margin: auto;
+  border: solid black 1px;
+}
+
+.board-container{
+  width: 550px;
   margin: 50px auto;
+
 }
 
 li{
@@ -26,5 +37,30 @@ li{
 .wire {
 
   background:red;
+
+}
+
+
+
+.clock {
+  margin: 100px 100px;
+  width: 80px;
+  height: 450px;
+  background-color: #75f25b;
+
+}
+
+.run {
+  animation-name:end-of-time;
+  animation-duration: 3s;
+}
+
+@keyframes end-of-time {
+    from {background-color:  #75f25b; height: 450px;}
+    to {background-color: red; height: 15px;}
+
+@keyframes extra-time {
+  from {background-color:  red; height: 15px;}
+  to {background-color: #75f25b; height: 450px;}
 
 }
