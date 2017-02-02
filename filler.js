@@ -1,32 +1,32 @@
 function Filler(){
   this.position={row:"",col:""};
-
-
 }
-//to start the game, the player choses a position
+//the player choses a position
 Filler.prototype.getPosition = function(i){
   this.position.row= parseInt($(i).attr('row'));
   this.position.col= parseInt($(i).attr('col'));
-
 };
 
-//these functions allow the player to move after it checks that
-// the path is free
+//these functions allow the player to move
 Filler.prototype.moveUp = function(){
   if (this.pathUp()){
    this.position.row-=1;}
+   else{wrongCommand();}
 };
 Filler.prototype.moveDown = function(){
   if (this.pathDown()){
    this.position.row+=1;}
+   else{wrongCommand();}
 };
 Filler.prototype.moveLeft = function(){
   if (this.pathLeft()){
    this.position.col-=1;}
+   else{wrongCommand();}
 };
 Filler.prototype.moveRight = function(){
   if (this.pathRight()){
    this.position.col+=1;}
+   else{wrongCommand();}
 };
 //We check if there's room to go
 Filler.prototype.pathUp = function(){
@@ -53,5 +53,3 @@ Filler.prototype.pathRight = function(){
   if(this.position.col<9 && rightClass==="square")
   {return true;}
 };
-
-var fill = new Filler();

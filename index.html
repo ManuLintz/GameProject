@@ -6,24 +6,115 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+  <link rel="stylesheet" href="reset.css" media="screen" title="no title" charset="utf-8">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>FILL IT</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 </head>
-<body>
-<div class="row header"></div>
-<div class='row'>
-  <div class='container'>
+<div class="row">
+  <div class='col-md-8 left'>
+      <div class="row">
+          <div class="col-md-3 score">
+                <h2>SCORE:</h2>
+                <p>0</p>
+          </div>
+          <div class="col-md-9 board-container">
+                <div class="row">
+                    <div class="col-md-10 message "><p></p></div>
+                    <div class="col-md-10 board "></div>
+                    <div class="col-md-1 timer">
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                      <div class="tiles"></div>
+                    </div>
+                    <div class="col-md-1 timer-title"><p>TIMER</p></div>
+                </div>
+          </div>
 
-    <div class='board-container col-md-5 col-md-offset-3'>
-      <ul></ul>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-5 col-md-offset-6 life"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5 col-md-offset-6 life-title"><p>BONUS</p></div>
+      </div>
+
+  </div>
+
+  <div class="col-md-4 right">
+    <div class="row">
+      <div class="col-md-12 title"><p> CAN YOU FILL IT?</p></div>
     </div>
-    <div class='clock col-md-1 col-md-offset-3'></div>
+    <div class="row">
+      <div class="col-md-12 instructions">
+        <ul>
+          <li>The aim of the game is to fill the board.
+             You can’t go twice on the same square and you can’t go on the blue squares.</li>
+          <li>Click on a white square to start the game. </li>
+          <li>Use your keyboard arrows to move. </li>
+          <li>There’s a timer. You reset it everytime you make a move.</li>
+          <li>When the timer ends, you lose !</li>
+          <li>You have three bonus when you start the game.</li>
+          <li>You earn a bonus everytime you fill the board.</li>
+          <li>Enjoy !</li>
+        </ul>
+      </div>
     </div>
   </div>
-  <script type="text/javascript" src="board.js"></script>
-  <script type="text/javascript" src="filler.js"></script>
-  <script type="text/javascript" src="main.js"></script>
-  <script type="text/javascript" src="clock.js"></script>
+
+
+
+
+</div>
+
+<div class="row">
+  <div class="col-md-12 footer"></div>
+</div>
+<script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="filler.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+<body>
 </body>
 </html>

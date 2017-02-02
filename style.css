@@ -1,66 +1,186 @@
-.header{
-  height:50px;
-  border: solid black 1px;
-}
-.container {
-  width: 900px;
-  margin: auto;
-  border: solid black 1px;
+.left {
+  background: grey;
+  height:95vh;
 }
 
-.board-container{
-  width: 550px;
-  margin: 50px auto;
+.right {
+  background: pink;
+  height:95vh;
+  border-left: solid white 5px;
+}
+
+.score {
+  margin-top: 120px;
+  height: 200px;
+  background: #604c5d;
+  font-family: 'Roboto Mono', monospace;
+  border-top: solid white 5px;
+  border-bottom:  solid white 5px;
+}
+
+.board-container {
+  height: 800px;
+  background-color: #3e7383;
+  border-left: solid white 5px;
+  border-bottom: solid white 5px;
 
 }
+
+
+.life {
+  height: 70px;
+  background: #f1dae4;
+  border: solid white 5px;
+  border-top: none;
+}
+
+.life-title p {
+  font-size: 50px;
+  color : white;
+  font-family: 'Roboto Mono', monospace;
+  float: right;
+}
+
+
+.board {
+  margin-top: 100px;
+  height: 700px;
+  background: #3e7383;
+  padding-bottom: 20px;
+  border-bottom: solid white 5px;
+}
+.message {
+  display: none;
+  margin-top: 100px;
+  height : 700px;
+  background: #dbb69c;
+  border-bottom: solid white 5px;
+}
+
+.message p {
+  margin-top: 10vh;
+  font-size: 50px;
+  color : white;
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+}
+
+.timer {
+  padding-top: 20px;
+  margin-top: 100px;
+  height: 700px;
+  background: #6da79d;
+  border-bottom: solid white 5px;
+}
+.tiles {
+  height: 15px;
+  width: 50px;
+  background: #399f09;
+  border-bottom: solid #6da79d 5px;
+}
+
+.blanco {
+  height: 15px;
+  width: 50px;
+  background-color: #c0dbd3;
+  border-bottom: solid #6da79d 5px;
+}
+.square {
+width: 10%;
+height: 10%;
+background: white;
+float: left;
+border: solid 3px #3e7383;
+}
+
+.square:hover {
+  background: #aff3ff;
+  border-bottom: solid 2px #5bb0a6;
+  border-right: solid 2px #5bb0a6;
+}
+
+.wire  {
+  box-sizing: border-box;
+  background: #f08e47;
+}
+.obstacle {
+  background: #27576b;
+  animation: vertical_6864 2.44s ease ;
+  transform-origin: 50% 50%;
+}
+@keyframes vertical_6864 {
+  0% { transform:translate(0,-3px) }
+  3.27869% { transform:translate(0,3px) }
+  6.55738% { transform:translate(0,-3px) }
+  9.83606% { transform:translate(0,3px) }
+  13.11475% { transform:translate(0,-3px) }
+  16.39344% { transform:translate(0,3px) }
+  18.03279% { transform:translate(0,0) }
+  100% { transform:translate(0,0) } }
+
+
+.obstacle:hover {
+  background: #ee5b5b;
+}
+
 
 li{
   list-style:none;
 }
 
-.square {
-  width: 48px;
-  height: 48px;
-  background: #4fd9ec;
-  border: solid white 1px;
-  float: left;
+.heart {
+  height : 50px;
+  width : 50px;
+  border-radius: 50%;
+  background-color: #9c1e1e;
+  float: right;
+  margin: 5px;
+  animation: bump 0.6s linear ;
+  transform-origin: 50% 50%;
 }
 
-.square:hover{
-  background: #098caf;
+@keyframes bump{
+  50% { transform:scale(1.1) }
+  100% { transform:scale(1)}
+
+ }
+.score h2, .score p {
+  margin-left: 40px;
+  font-size: 40px;
+  color: white;
 }
 
-.obstacle {
-  background: #27576b;
-
-}
-.wire {
-
-  background:red;
-
+.title {
+  height: 15vh;
+  border-bottom: solid white 5px;
 }
 
+.title p {
+  margin-top: 6vh;
+  font-size: 50px;
+  color : white;
+  font-family: 'Roboto Mono', monospace;
+}
 
+.footer {
+  border-top: solid white 5px;
+  background-color: #a69b9b;
+  height: 5vh
+}
 
-.clock {
-  margin: 100px 100px;
-  width: 80px;
-  height: 450px;
-  background-color: #75f25b;
+.timer-title p {
+  margin-top: 30vh;
+  font-size: 50px;
+  color : white;
+  font-family: 'Roboto Mono', monospace;
+  transform: rotate(90deg);
 
 }
 
-.run {
-  animation-name:end-of-time;
-  animation-duration: 3s;
-}
-
-@keyframes end-of-time {
-    from {background-color:  #75f25b; height: 450px;}
-    to {background-color: red; height: 15px;}
-
-@keyframes extra-time {
-  from {background-color:  red; height: 15px;}
-  to {background-color: #75f25b; height: 450px;}
+.instructions li {
+  margin-top: 20px;
+  font-size: 25px;
+  color : white;
+  font-family: 'Roboto Mono', monospace;
 
 }
