@@ -24,6 +24,8 @@ function drawPath(){
   $('li[col='+ column+'][row='+row+']').addClass('wire');
 }
 
+
+
 function resetGame (){
   var message;
   clearInterval(a);//this stops the clock;

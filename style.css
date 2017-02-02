@@ -77,6 +77,21 @@
   width: 50px;
   background: #399f09;
   border-bottom: solid #6da79d 5px;
+  animation: tada_9282 3.6s linear ;
+ transform-origin: 50% 50%;
+}
+
+@keyframes tada_9282 {
+  0% { transform: scale(1) }
+  5.55556% { transform:scale(.9) rotate(-8deg) }
+  11.11111% { transform:scale(.9) rotate(-8deg) }
+  16.66667% { transform:scale(1.1) rotate(8deg) }
+  22.22222% { transform:scale(1.2) rotate(-8deg) }
+  27.77778% { transform:scale(1.1) rotate(8deg) }
+  33.33333% { transform:scale(1.1) rotate(-8deg) }
+  38.88889% { transform:scale(1.1) rotate(8deg) }
+  44.44444% { transform:scale(1) rotate(0) }
+  100% { transform:scale(1) rotate(0) }
 }
 
 .blanco {
@@ -109,12 +124,12 @@ border: solid 3px #3e7383;
   transform-origin: 50% 50%;
 }
 @keyframes vertical_6864 {
-  0% { transform:translate(0,-3px) }
-  3.27869% { transform:translate(0,3px) }
-  6.55738% { transform:translate(0,-3px) }
-  9.83606% { transform:translate(0,3px) }
-  13.11475% { transform:translate(0,-3px) }
-  16.39344% { transform:translate(0,3px) }
+  0% { transform:translate(0,-5px) }
+  3.27869% { transform:translate(0,5px) }
+  6.55738% { transform:translate(0,-5px) }
+  9.83606% { transform:translate(0,5px) }
+  13.11475% { transform:translate(0,-5px) }
+  16.39344% { transform:translate(0,5px) }
   18.03279% { transform:translate(0,0) }
   100% { transform:translate(0,0) } }
 
