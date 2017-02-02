@@ -139,9 +139,7 @@ function keyCommands(){
             else  {
               playerLoses(50);
                     }
-
               }
-
           }
    });
 }
