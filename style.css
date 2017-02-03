@@ -1,41 +1,41 @@
 .left {
   background: grey;
-  height:95vh;
+  height:99vh;
 }
 
 .right {
   background: pink;
-  height:95vh;
-  border-left: solid white 5px;
+  height:99vh;
+  border-left: solid white 0.7vh;
 }
 
 .score {
-  margin-top: 120px;
-  height: 200px;
+  margin-top: 10vh;
+  height: 20vh;
   background: #604c5d;
   font-family: 'Roboto Mono', monospace;
-  border-top: solid white 5px;
-  border-bottom:  solid white 5px;
+  border-top: solid white 0.7vh;
+  border-bottom:  solid white 0.7vh;
 }
 
 .board-container {
-  height: 800px;
+  height: 90vh;
   background-color: #3e7383;
-  border-left: solid white 5px;
-  border-bottom: solid white 5px;
+  border-left: solid white 0.7vh;
+  border-bottom: solid white 0.7vh;
 
 }
 
 
 .life {
-  height: 70px;
+  height: 7vh;
   background: #f1dae4;
-  border: solid white 5px;
+  border: solid white 0.7vh;
   border-top: none;
 }
 
 .life-title p {
-  font-size: 50px;
+  font-size: 5vh;
   color : white;
   font-family: 'Roboto Mono', monospace;
   float: right;
@@ -43,44 +43,45 @@
 
 
 .board {
-  margin-top: 100px;
-  height: 700px;
+  margin-top: 10vh;
+  height: 75vh;
   background: #3e7383;
-  padding-bottom: 20px;
-  border-bottom: solid white 5px;
+  padding-bottom: 3vh;
+  /*border-bottom: solid white 0.7vh;*/
 }
 .message {
   display: none;
-  margin-top: 100px;
-  height : 700px;
+  margin-top: 10vh;
+  height : 80vh;
   background: #dbb69c;
-  border-bottom: solid white 5px;
+  border-bottom: solid white 0.7vh;
 }
 
 .message p {
   margin-top: 10vh;
-  font-size: 50px;
+  font-size: 5vh;
   color : white;
   font-family: 'Roboto Mono', monospace;
   text-align: justify;
 }
 
 .timer {
-  padding-top: 20px;
-  margin-top: 100px;
-  height: 700px;
+  padding-top: 1vh;
+  margin-top: 11vh;
+  height: 70vh;
   background: #6da79d;
-  border-bottom: solid white 5px;
+  /*border-bottom: solid white 0.7vh;*/
 }
 .tiles {
-  height: 15px;
-  width: 50px;
+  height: 1.7vh;
+  width: 3vw;
+  margin-left: -0.2vw;
   background: #399f09;
-  border-bottom: solid #6da79d 5px;
+  border-bottom: solid #6da79d 0.7vh;
   animation: tada_9282 3.6s linear ;
  transform-origin: 50% 50%;
 }
-
+/* this animation comes from this website :http://waitanimate.wstone.io/ */
 @keyframes tada_9282 {
   0% { transform: scale(1) }
   5.55556% { transform:scale(.9) rotate(-8deg) }
@@ -95,17 +96,17 @@
 }
 
 .blanco {
-  height: 15px;
-  width: 50px;
+  height: 1.7vh;
+  width: 3vw;
   background-color: #c0dbd3;
-  border-bottom: solid #6da79d 5px;
+  border-bottom: solid #6da79d 0.7vh;
 }
 .square {
 width: 10%;
 height: 10%;
 background: white;
 float: left;
-border: solid 3px #3e7383;
+border: solid 0.4vh #3e7383;
 }
 
 .square:hover {
@@ -119,17 +120,20 @@ border: solid 3px #3e7383;
   background: #f08e47;
 }
 .obstacle {
-  background: #27576b;
+  background: #034554;
   animation: vertical_6864 2.44s ease ;
   transform-origin: 50% 50%;
+/*  background-image: url('ironhack.png');*/
+  background-size: 60.7vh;
+  opacity: 1;
 }
 @keyframes vertical_6864 {
-  0% { transform:translate(0,-5px) }
-  3.27869% { transform:translate(0,5px) }
-  6.55738% { transform:translate(0,-5px) }
-  9.83606% { transform:translate(0,5px) }
-  13.11475% { transform:translate(0,-5px) }
-  16.39344% { transform:translate(0,5px) }
+  0% { transform:translate(0,-0.7vh) }
+  3.27869% { transform:translate(0,0.7vh) }
+  6.55738% { transform:translate(0,-0.7vh) }
+  9.83606% { transform:translate(0,0.7vh) }
+  13.11475% { transform:translate(0,-0.7vh) }
+  16.39344% { transform:translate(0,0.7vh) }
   18.03279% { transform:translate(0,0) }
   100% { transform:translate(0,0) } }
 
@@ -144,12 +148,12 @@ li{
 }
 
 .heart {
-  height : 50px;
-  width : 50px;
+  height : 5vh;
+  width : 5vh;
   border-radius: 50%;
   background-color: #9c1e1e;
   float: right;
-  margin: 5px;
+  margin: 0.7vh;
   animation: bump 0.6s linear ;
   transform-origin: 50% 50%;
 }
@@ -160,32 +164,32 @@ li{
 
  }
 .score h2, .score p {
-  margin-left: 40px;
-  font-size: 40px;
+  margin-left: 6vh;
+  font-size: 6vh;
   color: white;
 }
 
 .title {
   height: 15vh;
-  border-bottom: solid white 5px;
+  border-bottom: solid white 0.7vh;
 }
 
 .title p {
   margin-top: 6vh;
-  font-size: 50px;
+  font-size: 6vh;
   color : white;
   font-family: 'Roboto Mono', monospace;
 }
 
 .footer {
-  border-top: solid white 5px;
+  border-top: solid white 0.7vh;
   background-color: #a69b9b;
   height: 5vh
 }
 
 .timer-title p {
   margin-top: 30vh;
-  font-size: 50px;
+  font-size: 6vh;
   color : white;
   font-family: 'Roboto Mono', monospace;
   transform: rotate(90deg);
@@ -193,8 +197,8 @@ li{
 }
 
 .instructions li {
-  margin-top: 20px;
-  font-size: 25px;
+  margin-top: 2vh;
+  font-size: 3vh;
   color : white;
   font-family: 'Roboto Mono', monospace;
 
